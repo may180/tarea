@@ -14,13 +14,20 @@ export function VideoDemoSection() {
               {/* Aquí va tu video de YouTube o el que subas */}
               <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/TU_VIDEO_ID"
+                src="https://www.loom.com/share/989e6dc8afda48d98b4ff15f69e86d1c?sid=327c6ea9-953e-4339-9f43-761139d49383"
                 title="Demostración - Desarrollo de Portafolio Web con Next.js"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
-
+                <iframe
+                className="w-full h-full"
+                src="https://www.loom.com/share/1a3019fcfbdd4e47a809179b1c151e1d?sid=c9bb80b1-463a-4b53-8e30-0b6521f7e8fe"
+                title="Demostración - Desarrollo de Portafolio Web con Next.js"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
               {/* Placeholder mientras subes el video */}
               {/* <div className="text-center">
                 <div className="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -44,7 +51,7 @@ export function VideoDemoSection() {
                     <li>• Análisis de wireframes en Figma</li>
                     <li>• Definición de sistema de diseño</li>
                     <li>• Selección de colores y tipografía</li>
-                    <li>• Principios de UX aplicados</li>
+                
                   </ul>
                 </div>
                 <div>
