@@ -2,10 +2,10 @@ import Image from "next/image"
 
 export function AboutSection() {
   const skills = [
-    { name: "Diseño UI/UX", percentage: 95 },
-    { name: "Desarrollo Frontend", percentage: 90 },
-    { name: "WordPress", percentage: 85 },
-    { name: "SEO", percentage: 80 },
+    { name: "HTML5 & CSS3", percentage: 90 },
+    { name: "JavaScript & TypeScript", percentage: 85 },
+    { name: "React & Next.js", percentage: 80 },
+    { name: "Node.js & Express", percentage: 75 },
   ]
 
   return (
@@ -17,7 +17,7 @@ export function AboutSection() {
             <div className="rounded-3xl overflow-hidden shadow-2xl">
               <Image
                 src="/images/about-profile.jpg"
-                alt="Maikol Lozano"
+                alt="Maikol Lozano - Estudiante Universidad Iberoamericana"
                 width={400}
                 height={500}
                 className="w-full h-auto"
@@ -26,16 +26,18 @@ export function AboutSection() {
           </div>
           <div>
             <p className="text-slate-600 mb-6">
-              Con más de 5 años de experiencia en diseño y desarrollo web, he ayudado a decenas de clientes a establecer
-              su presencia en línea con sitios web atractivos y funcionales.
+              Soy estudiante de 5° semestre de Ingeniería de Software en la Universidad Iberoamericana. Mi pasión por la
+              tecnología me ha llevado a especializarme en desarrollo web, combinando conocimientos teóricos con
+              práctica hands-on en proyectos reales.
             </p>
             <p className="text-slate-600 mb-8">
-              Mi enfoque combina el diseño centrado en el usuario con las mejores prácticas de desarrollo para crear
-              productos digitales que no solo se ven bien, sino que también funcionan perfectamente.
+              Durante mi formación académica, he desarrollado competencias en metodologías ágiles, patrones de diseño,
+              bases de datos y arquitectura de software. Este portafolio representa la culminación de mis aprendizajes
+              en el módulo de desarrollo web.
             </p>
 
             <div>
-              <h3 className="text-2xl font-bold mb-6">Mis habilidades</h3>
+              <h3 className="text-2xl font-bold mb-6">Tecnologías que manejo</h3>
               <div className="space-y-6">
                 {skills.map((skill) => (
                   <div key={skill.name}>

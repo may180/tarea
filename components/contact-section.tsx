@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useState } from "react"
-import { Mail, Phone, MapPin } from "lucide-react"
+import { Mail, Phone, MapPin, GraduationCap } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
@@ -35,21 +35,21 @@ export function ContactSection() {
   return (
     <section id="contact" className="py-20 bg-slate-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-16">Contáctame</h2>
+        <h2 className="text-4xl font-bold text-center mb-16">Información de Contacto</h2>
         <div className="grid lg:grid-cols-2 gap-12">
           <div>
-            <h3 className="text-2xl font-bold mb-6">¿Listo para comenzar tu proyecto?</h3>
+            <h3 className="text-2xl font-bold mb-6">¿Interesado en colaborar?</h3>
             <p className="text-slate-600 mb-8">
-              Si estás buscando un profesional para tu próximo proyecto web o simplemente quieres hacer una pregunta, no
-              dudes en contactarme.
+              Como estudiante de Ingeniería de Software, estoy abierto a oportunidades de colaboración en proyectos,
+              prácticas profesionales y networking con profesionales del sector tecnológico.
             </p>
 
             <div className="space-y-6">
               <div className="flex items-start gap-4">
                 <Mail className="w-6 h-6 text-blue-600 mt-1" />
                 <div>
-                  <h4 className="font-semibold mb-1">Email</h4>
-                  <p className="text-slate-600">hola@maikollozano.com</p>
+                  <h4 className="font-semibold mb-1">Email Académico</h4>
+                  <p className="text-slate-600">maikol.lozano@estudiante.uniberoamericana.edu.co</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -64,6 +64,13 @@ export function ContactSection() {
                 <div>
                   <h4 className="font-semibold mb-1">Ubicación</h4>
                   <p className="text-slate-600">Bogotá, Colombia</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <GraduationCap className="w-6 h-6 text-blue-600 mt-1" />
+                <div>
+                  <h4 className="font-semibold mb-1">Universidad</h4>
+                  <p className="text-slate-600">Universidad Iberoamericana - 5° Semestre</p>
                 </div>
               </div>
             </div>
@@ -102,7 +109,7 @@ export function ContactSection() {
                 name="subject"
                 value={formData.subject}
                 onChange={handleChange}
-                placeholder="¿En qué puedo ayudarte?"
+                placeholder="Oportunidad de colaboración / Consulta académica"
                 required
               />
             </div>
@@ -113,7 +120,7 @@ export function ContactSection() {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                placeholder="Cuéntame sobre tu proyecto..."
+                placeholder="Cuéntame sobre la oportunidad o consulta..."
                 rows={6}
                 required
               />

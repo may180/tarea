@@ -1,55 +1,57 @@
-import { Monitor, Code, ShoppingCart, Search, Smartphone, Palette } from "lucide-react"
+import { Monitor, Code, Database, Smartphone, GitBranch, Users } from "lucide-react"
 
 export function ServicesSection() {
-  const services = [
-    {
-      icon: Monitor,
-      title: "Diseño Web",
-      description:
-        "Creo diseños modernos y atractivos que reflejan la identidad de tu marca y mejoran la experiencia del usuario.",
-    },
+  const competencies = [
     {
       icon: Code,
-      title: "Desarrollo Web",
+      title: "Desarrollo Frontend",
       description:
-        "Desarrollo sitios web responsivos, rápidos y optimizados para todos los dispositivos y navegadores.",
+        "Creación de interfaces de usuario modernas y responsivas utilizando React, Next.js, HTML5, CSS3 y JavaScript.",
     },
     {
-      icon: ShoppingCart,
-      title: "E-Commerce",
-      description: "Soluciones completas de comercio electrónico para vender tus productos o servicios en línea.",
+      icon: Database,
+      title: "Desarrollo Backend",
+      description:
+        "Implementación de APIs REST, manejo de bases de datos SQL/NoSQL y arquitectura de servidores con Node.js.",
     },
     {
-      icon: Search,
-      title: "SEO",
+      icon: Monitor,
+      title: "Diseño UI/UX",
       description:
-        "Optimizo tu sitio web para mejorar su visibilidad en los motores de búsqueda y atraer más clientes.",
+        "Aplicación de principios de diseño centrado en el usuario, wireframing, prototipado y testing de usabilidad.",
+    },
+    {
+      icon: GitBranch,
+      title: "Control de Versiones",
+      description: "Manejo avanzado de Git y GitHub para colaboración en equipo y gestión de proyectos de software.",
     },
     {
       icon: Smartphone,
-      title: "Diseño de Apps",
-      description: "Diseño interfaces intuitivas y atractivas para aplicaciones móviles que tus usuarios amarán.",
+      title: "Desarrollo Responsive",
+      description:
+        "Implementación de diseños adaptativos que funcionan perfectamente en todos los dispositivos y tamaños de pantalla.",
     },
     {
-      icon: Palette,
-      title: "Branding",
-      description: "Desarrollo identidades visuales coherentes que comunican efectivamente los valores de tu marca.",
+      icon: Users,
+      title: "Metodologías Ágiles",
+      description:
+        "Aplicación de Scrum y Kanban en proyectos de desarrollo, con enfoque en entrega continua y mejora iterativa.",
     },
   ]
 
   return (
     <section id="services" className="py-20 bg-slate-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-16">Mis Servicios</h2>
+        <h2 className="text-4xl font-bold text-center mb-16">Competencias Técnicas</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service) => (
+          {competencies.map((competency) => (
             <div
-              key={service.title}
+              key={competency.title}
               className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
             >
-              <service.icon className="w-12 h-12 text-blue-600 mb-6" />
-              <h3 className="text-xl font-bold mb-4">{service.title}</h3>
-              <p className="text-slate-600">{service.description}</p>
+              <competency.icon className="w-12 h-12 text-blue-600 mb-6" />
+              <h3 className="text-xl font-bold mb-4">{competency.title}</h3>
+              <p className="text-slate-600">{competency.description}</p>
             </div>
           ))}
         </div>

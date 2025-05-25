@@ -31,12 +31,17 @@ export function Header() {
               </li>
               <li>
                 <Link href="#services" className="text-slate-800 font-semibold hover:text-blue-600 transition-colors">
-                  Servicios
+                  Competencias
                 </Link>
               </li>
               <li>
                 <Link href="#portfolio" className="text-slate-800 font-semibold hover:text-blue-600 transition-colors">
-                  Portafolio
+                  Proyectos
+                </Link>
+              </li>
+              <li>
+                <Link href="#video-demo" className="text-slate-800 font-semibold hover:text-blue-600 transition-colors">
+                  Demo
                 </Link>
               </li>
               <li>
@@ -80,7 +85,7 @@ export function Header() {
                   className="block text-slate-800 font-semibold hover:text-blue-600 transition-colors"
                   onClick={toggleMenu}
                 >
-                  Servicios
+                  Competencias
                 </Link>
               </li>
               <li>
@@ -89,7 +94,16 @@ export function Header() {
                   className="block text-slate-800 font-semibold hover:text-blue-600 transition-colors"
                   onClick={toggleMenu}
                 >
-                  Portafolio
+                  Proyectos
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="#video-demo"
+                  className="block text-slate-800 font-semibold hover:text-blue-600 transition-colors"
+                  onClick={toggleMenu}
+                >
+                  Demo
                 </Link>
               </li>
               <li>
