@@ -4,79 +4,103 @@ export function VideoDemoSection() {
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-8">Demostración del Proyecto</h2>
         <p className="text-center text-slate-600 mb-12 max-w-3xl mx-auto">
-          Video explicativo del proceso de desarrollo de este portafolio web, desde los wireframes iniciales hasta la
+          Videos explicativos del proceso de desarrollo de este portafolio web, desde los wireframes iniciales hasta la
           implementación final con Next.js y el deploy en producción.
         </p>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto space-y-8">
+          {/* Primer Video */}
           <div className="bg-white rounded-xl shadow-lg overflow-hidden">
-            <div className="aspect-video bg-slate-100 flex items-center justify-center">
-              {/* Aquí va tu video de YouTube o el que subas */}
+            <div className="aspect-video bg-slate-100">
               <iframe
                 className="w-full h-full"
-                src="https://www.loom.com/share/989e6dc8afda48d98b4ff15f69e86d1c?sid=327c6ea9-953e-4339-9f43-761139d49383"
-                title="Demostración - Desarrollo de Portafolio Web con Next.js"
+                src="https://www.loom.com/embed/989e6dc8afda48d98b4ff15f69e86d1c?sid=327c6ea9-953e-4339-9f43-761139d49383"
+                title="Parte 1 - Análisis y Diseño del Portafolio Web"
                 frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                webkitallowfullscreen
+                mozallowfullscreen
                 allowFullScreen
               ></iframe>
-                <iframe
+            </div>
+            <div className="p-6">
+              <h3 className="text-xl font-bold mb-2">Parte 1: Análisis y Diseño</h3>
+              <p className="text-slate-600">
+                Explicación del proceso de wireframing, análisis de requisitos y definición del sistema de diseño.
+              </p>
+            </div>
+          </div>
+
+          {/* Segundo Video */}
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+            <div className="aspect-video bg-slate-100">
+              <iframe
                 className="w-full h-full"
-                src="https://www.loom.com/share/1a3019fcfbdd4e47a809179b1c151e1d?sid=c9bb80b1-463a-4b53-8e30-0b6521f7e8fe"
-                title="Demostración - Desarrollo de Portafolio Web con Next.js"
+                src="https://www.loom.com/embed/1a3019fcfbdd4e47a809179b1c151e1d?sid=c9bb80b1-463a-4b53-8e30-0b6521f7e8fe"
+                title="Parte 2 - Implementación y Deploy del Portafolio Web"
                 frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                webkitallowfullscreen
+                mozallowfullscreen
                 allowFullScreen
               ></iframe>
-              {/* Placeholder mientras subes el video */}
-              {/* <div className="text-center">
-                <div className="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"/>
-                  </svg>
-                </div>
-                <h3 className="text-xl font-semibold mb-2">Video de Demostración</h3>
-                <p className="text-slate-600">
-                  Próximamente: Video explicativo completo del desarrollo del proyecto
-                </p>
-              </div> */}
+            </div>
+            <div className="p-6">
+              <h3 className="text-xl font-bold mb-2">Parte 2: Implementación y Deploy</h3>
+              <p className="text-slate-600">
+                Desarrollo con Next.js, implementación de componentes React y proceso de deploy en Vercel.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Información adicional */}
+        <div className="max-w-4xl mx-auto mt-12">
+          <div className="bg-white rounded-xl shadow-lg p-8">
+            <h3 className="text-2xl font-bold mb-6 text-center">Contenido de los Videos</h3>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h4 className="font-semibold mb-3 text-blue-600">🎨 Proceso de Diseño</h4>
+                <ul className="text-slate-600 space-y-2">
+                  <li>• Análisis de wireframes en Figma</li>
+                  <li>• Definición de sistema de diseño</li>
+                  <li>• Selección de colores y tipografía</li>
+                  <li>• Principios de UX aplicados</li>
+                  <li>• Estructura de información</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-semibold mb-3 text-blue-600">⚡ Implementación Técnica</h4>
+                <ul className="text-slate-600 space-y-2">
+                  <li>• Estructura del proyecto Next.js</li>
+                  <li>• Componentes React modulares</li>
+                  <li>• Estilos con Tailwind CSS</li>
+                  <li>• Optimización de imágenes</li>
+                  <li>• Deploy en Vercel</li>
+                </ul>
+              </div>
             </div>
 
-            <div className="p-8">
-              <h3 className="text-2xl font-bold mb-4">Contenido del Video</h3>
-              <div className="grid md:grid-cols-2 gap-6">
+            <div className="mt-8 p-6 bg-blue-50 rounded-lg">
+              <h4 className="font-semibold text-blue-800 mb-4">📊 Datos del Proyecto</h4>
+              <div className="grid md:grid-cols-4 gap-4 text-sm">
                 <div>
-                  <h4 className="font-semibold mb-2 text-blue-600">Proceso de Diseño</h4>
-                  <ul className="text-slate-600 space-y-1">
-                    <li>• Análisis de wireframes en Figma</li>
-                    <li>• Definición de sistema de diseño</li>
-                    <li>• Selección de colores y tipografía</li>
-                
-                  </ul>
+                  <span className="font-medium">Duración Total:</span>
+                  <br />
+                  <span className="text-blue-600">25-30 minutos</span>
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-2 text-blue-600">Implementación Técnica</h4>
-                  <ul className="text-slate-600 space-y-1">
-                    <li>• Estructura del proyecto Next.js</li>
-                    <li>• Componentes React modulares</li>
-                    <li>• Estilos con Tailwind CSS</li>
-                    <li>• Deploy en Vercel</li>
-                  </ul>
+                  <span className="font-medium">Tecnologías:</span>
+                  <br />
+                  <span className="text-blue-600">Next.js, React, TypeScript</span>
                 </div>
-              </div>
-
-              <div className="mt-6 p-4 bg-blue-50 rounded-lg">
-                <h4 className="font-semibold text-blue-800 mb-2">Datos del Proyecto</h4>
-                <div className="grid md:grid-cols-3 gap-4 text-sm">
-                  <div>
-                    <span className="font-medium">Duración:</span> 15-20 minutos
-                  </div>
-                  <div>
-                    <span className="font-medium">Tecnologías:</span> Next.js, React, TypeScript
-                  </div>
-                  <div>
-                    <span className="font-medium">Estudiante:</span> Maikol Lozano Ramírez
-                  </div>
+                <div>
+                  <span className="font-medium">Estudiante:</span>
+                  <br />
+                  <span className="text-blue-600">Maikol Lozano Ramírez</span>
+                </div>
+                <div>
+                  <span className="font-medium">Universidad:</span>
+                  <br />
+                  <span className="text-blue-600">Iberoamericana - 5° Semestre</span>
                 </div>
               </div>
             </div>
